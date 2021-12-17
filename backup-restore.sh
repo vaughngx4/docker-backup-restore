@@ -66,10 +66,19 @@ function genCompose {
     cd $dir
 }
 function search {
-    ##   Change container naming convention here.
+    ##   Add container naming convention here.
     ##   Variable $2 is group/stack name (i.e npm).
     ##   $2_[a-z0-9]* and $2* are searched for by default.
-    result=$(echo $1 | grep  -o $2)
+    ##   Example: 
+    ##   regex="-[a-z][0-9]*"
+    ##
+    ##   where $2 = bitwarden:
+    ##   regex will match 'bitwarden_other-text' 'bitwarden-othertext' 'bitwarden'
+    ##
+    ##   You could also add code to check if result returns nothing, try next regex
+    ##   To add multiple naming conventions.
+    regex=""
+    result=$(echo $1 | grep  -o $2$regex)
     echo $result
 }
 pop_yaml "definitions.yml"
