@@ -15,6 +15,7 @@
  - [x] Fix restore function to read defined options
  - [ ] Add option to backup all defined containers
  - [x] Clean output
+ - [ ] Catch more errors
  #
  **Description:**
  Configurable bash script used to backup and restore Docker containers and volumes/mounts.
