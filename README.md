@@ -21,7 +21,7 @@
  Configurable bash script used to backup and restore Docker containers and volumes/mounts.
  #
  **Message from developer:**
- * I hope some find this script as useful as i do. This script is part of a much bigger project called Raindrop which is used internally to deploy, update, backup, restore and maintain our docker deployments securely without leaking script source to the targeted server and providing a secure, easy to use interface. The idea is to avoid tedious configuration, so we have written scripts to configure stacks and containers in ways best recommended by the maintainers - these are also kept up to date with the latest best practices. We plan to release the source code for the entire project in the future.
+ * I hope some find this script as useful as I do. This script is part of a much bigger project called Raindrop which is used internally to deploy, update, backup, restore and maintain our docker deployments securely without leaking script source to the targeted server and providing a secure, easy to use interface. The idea is to avoid tedious configuration, so we have written scripts to configure stacks and containers in ways best recommended by the maintainers - these are also kept up to date with the latest best practices. We plan to release the source code for the entire project in the future.
  #
  **Official Website:**
  * https://www.sintelli-tech.com
