@@ -1,4 +1,4 @@
- *SiNtelli Technologies Pty(ltd) Docker Backup/Restore Script*
+ *SiNtelli Technologies (Pty) Ltd. Docker Backup/Restore Script*
  * ***Please note that this script is still in development and has not yet been thoroughly tested. Use at your own risk.***
  **Don't hesitate to report bugs, this script is activley being maintained.**
  #  
