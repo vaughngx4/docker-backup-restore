@@ -1,0 +1,52 @@
+npm_npm:
+  image:
+    backup: "false"
+  volumes:
+    backup: "false"
+npm_nginx:
+  image:
+    backup: "false"
+  volumes:
+    backup: "bind"
+  yaml:
+    exclude:
+      - "command"
+      - "entrypoints"
+      - "environment"
+      - "labels"
+      - "logging"
+      - "expose"
+      - "hostname"
+      - "ipc"
+npm_db:
+  image:
+    backup: "true"
+  volumes:
+    backup: "volume"
+raindrop:
+  image:
+    backup: "false"
+  volumes:
+    backup: "bind"
+  yaml:
+    exclude:
+      - "command"
+      - "entrypoints"
+      - "environment"
+      - "labels"
+      - "logging"
+      - "expose"
+      - "hostname"
+      - "ipc"
+raindrop_backend:
+  image:
+    backup: "false"
+  yaml:
+    exclude:
+      - "command"
+      - "entrypoints"
+      - "labels"
+      - "logging"
+      - "expose"
+      - "hostname"
+      - "ipc"
