@@ -222,10 +222,11 @@ do
     defined="false"
     while [[ $loop != $count ]]
     do
-        if [[ ${arg[$loop]} == "all" ]]; then
-            fullback=1
+        while [[ ${arg[$loop]} == "all" ]]; do
             echo "Backing up all defined containers and data."
-        else
+            break;
+        done
+        while [[ $arg[$loop] != "all" ]]; do
             for value in "${defs[@]}"; do
                 search=$(search "$value" "${arg[$loop]}_[a-z0-9]*")
                 option=$(echo $value | grep ${arg[loop]} | tr -d '()' | tr -d '"' | grep -o "image.backup=[a-zA-Z]*")
@@ -416,7 +417,8 @@ do
                     break;
                 done
             done
-        fi
+            break;
+        done
         let "loop=loop+1";
     done
     while [[ $defined == "false" ]]; do
