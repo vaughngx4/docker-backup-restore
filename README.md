@@ -6,7 +6,7 @@
  * **Please read carefully before using the script.**
  * Stacks and containers need to be defined in definitions.yml (examples have been provided).
  * Volume backup options include: 'bind' and 'volume', creating a backup of a bind or volume mount respectively(directory bind mounts can also be backed up as volumes).
- * docker-autocompose by red5d(credit to red5d for the awesome work) is used to generate yamls, sections can be excluded as well(examples in definitions.yml).
+ * docker-autocompose by Red5d(credit to red5d for the awesome work - https://github.com/Red5d/docker-autocompose) is used to generate yamls, sections can be excluded as well(examples in definitions.yml).
  * Image backups are not necessary for generic images(i.e Portainer, NGINX etc.) and won't restore correctly.
  * Image backups use the 'docker commit' and 'docker save' commands, this may not work in some cases. Be sure to configure definitions.yml correctly.
  #  
